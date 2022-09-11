@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculate Your third internal mark</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>CIE-3 MARKS CALCULATOR</h2>
+
+        <form id="mainForm">
+            <div class="calculate">
+
+                <h2>Total marks:</h2>
+                <div class="ckt">
+                    <!--<input type="checkbox" id="outOf30" name="tmark1" value="30">
+                    <label for="tmark1">30</label>
+                    <input type="checkbox" id="outOf40" name="tmark2" value="40">
+                    <label for="tmark2">40</label>-->
+                    <label>CIE is out of:</label>
+                    <select>
+                        <option id="outOf30" name="tmarks1" value="30">30</option>
+                        <option id="outOf40" name="tmarks2" value="40">40</option>
+                        </select>
+                </div>
+
+                <h2>Enter your CIE-1 marks:</h2>
+                <input type="text" id="int1" placeholder="Enter marks" required>
+
+                <h2>Enter your CIE-2 marks:</h2>
+                <input type="text" id="int2" placeholder="Enter marks" required>
+                <div class="result">
+                <input type="submit" value="calculate">
+                </div>
+
+                <h2>Result:</h2>
+                <div class="resultField">
+                    <h3 id="result"></h3>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
